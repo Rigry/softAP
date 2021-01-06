@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+/home/ap/esp/softAP_/build/bootloader/CMakeFiles/mconf-idf
+/home/ap/esp/softAP_/build/bootloader/CMakeFiles/mconf-idf.rule
+/home/ap/esp/softAP_/build/bootloader/CMakeFiles/mconf-idf-complete.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/home/ap/esp/softAP_/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule

@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DSDKCONFIG=/home/ap/esp/softAP_/sdkconfig;-DIDF_PATH=/home/ap/esp/esp-idf;-DSECURE_BOOT_SIGNING_KEY=/home/ap/esp/softAP_;-DEXTRA_COMPONENT_DIRS=/home/ap/esp/esp-idf/components/bootloader;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'
