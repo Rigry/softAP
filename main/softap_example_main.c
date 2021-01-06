@@ -40,12 +40,27 @@ bool status=true;
 /* Our URI handler function to be called during GET /uri request */
 esp_err_t get_handler(httpd_req_t *req)
 {
+    status = false;
     /* Send a simple response */
-    char* resp_str = "<br/><br/><h2><div align='center'>LED is <b>OFF</b></div></h2>";
-    if(status){
-        resp_str = "<br/><br/><h2><div align='center'>LED is <b>ON</b></div></h2>";
-    }
-    status = !status;
+    char* resp_str = "";
+    resp_str = "<!DOCTYPE html> <html>\n \
+    <head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n\
+    <title>LED Control</title>\n\
+    <style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n\
+    body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;} h3 {color: #444444;margin-bottom: 50px;}\n\
+    .button {display: block;width: 80px;background-color: #3498db;border: none;color: white;padding: 13px 30px;text-decoration: none;font-size: 25px;margin: 0px auto 35px;cursor: pointer;border-radius: 4px;}\n\
+    .button-on {background-color: #3498db;}\n\
+    .button-on:active {background-color: #2980b9;}\n\
+    .button-off {background-color: #34495e;}\n\
+    .button-off:active {background-color: #2c3e50;}\n\
+    p {font-size: 14px;color: #888;margin-bottom: 10px;}\n\
+    </style>\n\
+    </head>\n\
+    <body>\n\
+    <p>Status: OFF</p><a class=\"button button-on\" href=\"/ledon\">ON</a>\n\
+    </body>\n\
+    </html>\n";
+
     ESP_LOGI(TAG, "New Status for the pin :%d , is = %d", PIN, status);
     gpio_set_level(PIN, status);
     ESP_LOGI(TAG, "Send resp");
@@ -59,6 +74,44 @@ httpd_uri_t uri_get = {
     .uri      = "/",
     .method   = HTTP_GET,
     .handler  = get_handler
+};
+
+esp_err_t on_handler(httpd_req_t *req)
+{
+    status = true;
+    /* Send a simple response */
+    char* resp_str = "";
+    resp_str = "<!DOCTYPE html> <html>\n \
+    <head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n\
+    <title>LED Control</title>\n\
+    <style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n\
+    body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;} h3 {color: #444444;margin-bottom: 50px;}\n\
+    .button {display: block;width: 80px;background-color: #3498db;border: none;color: white;padding: 13px 30px;text-decoration: none;font-size: 25px;margin: 0px auto 35px;cursor: pointer;border-radius: 4px;}\n\
+    .button-on {background-color: #3498db;}\n\
+    .button-on:active {background-color: #2980b9;}\n\
+    .button-off {background-color: #34495e;}\n\
+    .button-off:active {background-color: #2c3e50;}\n\
+    p {font-size: 14px;color: #888;margin-bottom: 10px;}\n\
+    </style>\n\
+    </head>\n\
+    <body>\n\
+    <p>Status: ON</p><a class=\"button button-off\" href=\"/\">OFF</a>\n\
+    </body>\n\
+    </html>\n";
+
+    ESP_LOGI(TAG, "New Status for the pin :%d , is = %d", PIN, status);
+    gpio_set_level(PIN, status);
+    ESP_LOGI(TAG, "Send resp");
+    httpd_resp_send(req, resp_str, strlen(resp_str));
+    ESP_LOGI(TAG, "Sent resp");
+    return ESP_OK;
+}
+
+/* URI handler structure for GET /uri */
+httpd_uri_t uri_on = {
+    .uri      = "/ledon",
+    .method   = HTTP_GET,
+    .handler  = on_handler
 };
 
 /* Function for starting the webserver */
@@ -75,6 +128,7 @@ httpd_handle_t start_webserver(void)
         /* Register URI handlers */
         ESP_LOGI(TAG, "Registering URI handlers");
         httpd_register_uri_handler(server, &uri_get);
+        httpd_register_uri_handler(server, &uri_on);
         ESP_LOGI(TAG, "Registered URI handlers");
     }
     /* If server failed to start, handle will be NULL */
