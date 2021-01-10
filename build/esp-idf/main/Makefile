@@ -186,6 +186,33 @@ idf_component_main/fast:
 	cd /home/ap/esp/softAP_/build && $(MAKE) -f esp-idf/main/CMakeFiles/idf_component_main.dir/build.make esp-idf/main/CMakeFiles/idf_component_main.dir/build
 .PHONY : idf_component_main/fast
 
+__/components/esp_hijack_srv/dns_hijack_srv.obj: __/components/esp_hijack_srv/dns_hijack_srv.c.obj
+
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.obj
+
+# target to build an object file
+__/components/esp_hijack_srv/dns_hijack_srv.c.obj:
+	cd /home/ap/esp/softAP_/build && $(MAKE) -f esp-idf/main/CMakeFiles/idf_component_main.dir/build.make esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.c.obj
+
+__/components/esp_hijack_srv/dns_hijack_srv.i: __/components/esp_hijack_srv/dns_hijack_srv.c.i
+
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.i
+
+# target to preprocess a source file
+__/components/esp_hijack_srv/dns_hijack_srv.c.i:
+	cd /home/ap/esp/softAP_/build && $(MAKE) -f esp-idf/main/CMakeFiles/idf_component_main.dir/build.make esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.i
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.c.i
+
+__/components/esp_hijack_srv/dns_hijack_srv.s: __/components/esp_hijack_srv/dns_hijack_srv.c.s
+
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.s
+
+# target to generate assembly for a file
+__/components/esp_hijack_srv/dns_hijack_srv.c.s:
+	cd /home/ap/esp/softAP_/build && $(MAKE) -f esp-idf/main/CMakeFiles/idf_component_main.dir/build.make esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.s
+.PHONY : __/components/esp_hijack_srv/dns_hijack_srv.c.s
+
 softap_example_main.obj: softap_example_main.c.obj
 
 .PHONY : softap_example_main.obj
@@ -227,6 +254,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... __/components/esp_hijack_srv/dns_hijack_srv.obj"
+	@echo "... __/components/esp_hijack_srv/dns_hijack_srv.i"
+	@echo "... __/components/esp_hijack_srv/dns_hijack_srv.s"
 	@echo "... softap_example_main.obj"
 	@echo "... softap_example_main.i"
 	@echo "... softap_example_main.s"

@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../components/esp_hijack_srv/dns_hijack_srv.h
+stdint.h
+-
+esp_err.h
+../components/esp_hijack_srv/esp_err.h
+freertos/FreeRTOS.h
+../components/esp_hijack_srv/freertos/FreeRTOS.h
+freertos/task.h
+../components/esp_hijack_srv/freertos/task.h
+lwip/netdb.h
+-
+
 /home/ap/esp/esp-idf/components/driver/include/driver/gpio.h
 esp_err.h
 /home/ap/esp/esp-idf/components/driver/include/driver/esp_err.h
@@ -654,6 +666,20 @@ lwip/opt.h
 lwip/arch.h
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/arch.h
 
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h
+lwip/opt.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/opt.h
+
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h
+lwip/opt.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/opt.h
+lwip/def.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/def.h
+lwip/ip_addr.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/ip_addr.h
+lwip/ip6_addr.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/ip6_addr.h
+
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h
 lwip/opt.h
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/opt.h
@@ -680,11 +706,33 @@ lwip/ip4_addr.h
 lwip/ip6_addr.h
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/ip6_addr.h
 
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h
+lwip/opt.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/opt.h
+lwip/arch.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/arch.h
+lwip/inet.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/inet.h
+lwip/sockets.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/sockets.h
+
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h
 lwipopts.h
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwipopts.h
 lwip/debug.h
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/debug.h
+
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h
+lwip/opt.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/opt.h
+lwip/ip_addr.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/ip_addr.h
+lwip/err.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/err.h
+lwip/inet.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/inet.h
+lwip/errno.h
+/home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/lwip/errno.h
 
 /home/ap/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h
 lwip/opt.h
@@ -792,7 +840,13 @@ sys/features.h
 machine/_default_types.h
 -
 
+/home/ap/esp/esp-idf/components/newlib/include/machine/endian.h
+sys/config.h
+-
+
 /home/ap/esp/esp-idf/components/newlib/include/machine/ieeefp.h
+
+/home/ap/esp/esp-idf/components/newlib/include/machine/param.h
 
 /home/ap/esp/esp-idf/components/newlib/include/machine/stdlib.h
 
@@ -910,6 +964,16 @@ sys/_default_fcntl.h
 _ansi.h
 -
 
+/home/ap/esp/esp-idf/components/newlib/include/sys/param.h
+sys/config.h
+-
+sys/syslimits.h
+-
+machine/endian.h
+-
+machine/param.h
+-
+
 /home/ap/esp/esp-idf/components/newlib/include/sys/reent.h
 _ansi.h
 -
@@ -945,6 +1009,8 @@ sys/reent.h
 -
 
 /home/ap/esp/esp-idf/components/newlib/include/sys/string.h
+
+/home/ap/esp/esp-idf/components/newlib/include/sys/syslimits.h
 
 /home/ap/esp/esp-idf/components/newlib/include/sys/time.h
 _ansi.h
@@ -1130,6 +1196,46 @@ dhcpserver/dhcpserver.h
 
 /home/ap/esp/esp-idf/components/vfs/include/sys/ioctl.h
 
+/home/ap/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h
+
+/home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.c
+string.h
+-
+sys/param.h
+-
+freertos/FreeRTOS.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/freertos/FreeRTOS.h
+freertos/task.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/freertos/task.h
+esp_log.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/esp_log.h
+esp_event.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/esp_event.h
+lwip/err.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/lwip/err.h
+lwip/sockets.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/lwip/sockets.h
+lwip/sys.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/lwip/sys.h
+lwip/netdb.h
+-
+byteswap.h
+-
+dns_hijack_srv.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.h
+
+/home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.h
+stdint.h
+-
+esp_err.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/esp_err.h
+freertos/FreeRTOS.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/freertos/FreeRTOS.h
+freertos/task.h
+/home/ap/esp/softAP_/components/esp_hijack_srv/freertos/task.h
+lwip/netdb.h
+-
+
 /home/ap/esp/softAP_/main/softap_example_main.c
 string.h
 -
@@ -1151,6 +1257,8 @@ esp_http_server.h
 /home/ap/esp/softAP_/main/esp_http_server.h
 nvs_flash.h
 /home/ap/esp/softAP_/main/nvs_flash.h
+dns_hijack_srv.h
+/home/ap/esp/softAP_/main/dns_hijack_srv.h
 lwip/err.h
 /home/ap/esp/softAP_/main/lwip/err.h
 lwip/sys.h

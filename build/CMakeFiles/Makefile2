@@ -941,12 +941,12 @@ esp-idf/soc/preinstall:
 esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/all: esp-idf/soc/CMakeFiles/idf_component_soc.dir/all
 	$(MAKE) -f esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/build.make esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/depend
 	$(MAKE) -f esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/build.make esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num= "Built target idf_component_soc_sections_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=71 "Built target idf_component_soc_sections_info"
 .PHONY : esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/soc/CMakeFiles/idf_component_soc_sections_info.dir/rule
@@ -1594,12 +1594,12 @@ clean: esp-idf/newlib/CMakeFiles/idf_component_newlib.dir/clean
 esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/all: esp-idf/newlib/CMakeFiles/idf_component_newlib.dir/all
 	$(MAKE) -f esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/build.make esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/depend
 	$(MAKE) -f esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/build.make esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num= "Built target idf_component_newlib_sections_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=60 "Built target idf_component_newlib_sections_info"
 .PHONY : esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/newlib/CMakeFiles/idf_component_newlib_sections_info.dir/rule
@@ -1909,12 +1909,12 @@ esp-idf/ethernet/preinstall:
 esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/all: esp-idf/ethernet/CMakeFiles/idf_component_ethernet.dir/all
 	$(MAKE) -f esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/build.make esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/depend
 	$(MAKE) -f esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/build.make esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=23 "Built target idf_component_ethernet_sections_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num= "Built target idf_component_ethernet_sections_info"
 .PHONY : esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/ethernet/CMakeFiles/idf_component_ethernet_sections_info.dir/rule
@@ -2967,7 +2967,7 @@ esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash_sections_info.dir/all: esp-
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash_sections_info.dir/rule
@@ -2994,7 +2994,7 @@ clean: esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash_sections_info.dir/cl
 esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/all:
 	$(MAKE) -f esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/depend
 	$(MAKE) -f esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=71 "Built target idf_component_spi_flash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num= "Built target idf_component_spi_flash"
 .PHONY : esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/all
 
 # Include target in all.
@@ -3004,7 +3004,7 @@ all: esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/idf_component_spi_flash.dir/rule
@@ -4337,7 +4337,7 @@ esp-idf/nghttp/CMakeFiles/idf_component_nghttp_sections_info.dir/all: esp-idf/ng
 
 # Build rule for subdir invocation for target.
 esp-idf/nghttp/CMakeFiles/idf_component_nghttp_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/nghttp/CMakeFiles/idf_component_nghttp_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/nghttp/CMakeFiles/idf_component_nghttp_sections_info.dir/rule
@@ -4364,7 +4364,7 @@ clean: esp-idf/nghttp/CMakeFiles/idf_component_nghttp_sections_info.dir/clean
 esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/all:
 	$(MAKE) -f esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/build.make esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/depend
 	$(MAKE) -f esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/build.make esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=60,61,62 "Built target idf_component_nghttp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=61,62 "Built target idf_component_nghttp"
 .PHONY : esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/all
 
 # Include target in all.
@@ -4374,7 +4374,7 @@ all: esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/nghttp/CMakeFiles/idf_component_nghttp.dir/rule
@@ -5235,7 +5235,7 @@ esp-idf/expat/CMakeFiles/idf_component_expat_sections_info.dir/all: esp-idf/expa
 
 # Build rule for subdir invocation for target.
 esp-idf/expat/CMakeFiles/idf_component_expat_sections_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/CMakeFiles/idf_component_expat_sections_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/expat/CMakeFiles/idf_component_expat_sections_info.dir/rule
@@ -5262,7 +5262,7 @@ clean: esp-idf/expat/CMakeFiles/idf_component_expat_sections_info.dir/clean
 esp-idf/expat/CMakeFiles/idf_component_expat.dir/all:
 	$(MAKE) -f esp-idf/expat/CMakeFiles/idf_component_expat.dir/build.make esp-idf/expat/CMakeFiles/idf_component_expat.dir/depend
 	$(MAKE) -f esp-idf/expat/CMakeFiles/idf_component_expat.dir/build.make esp-idf/expat/CMakeFiles/idf_component_expat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num= "Built target idf_component_expat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=23 "Built target idf_component_expat"
 .PHONY : esp-idf/expat/CMakeFiles/idf_component_expat.dir/all
 
 # Include target in all.
@@ -5272,7 +5272,7 @@ all: esp-idf/expat/CMakeFiles/idf_component_expat.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/expat/CMakeFiles/idf_component_expat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/CMakeFiles/idf_component_expat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ap/esp/softAP_/build/CMakeFiles 0
 .PHONY : esp-idf/expat/CMakeFiles/idf_component_expat.dir/rule

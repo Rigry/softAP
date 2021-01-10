@@ -101,6 +101,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/ap/esp/esp-idf/components/unity/unity/src"
   "/home/ap/esp/esp-idf/components/wifi_provisioning/include"
   "../main"
+  "../components/esp_hijack_srv"
   )
 
 # Targets to which this target links.

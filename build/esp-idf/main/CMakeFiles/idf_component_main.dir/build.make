@@ -81,17 +81,43 @@ esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj.provide
 esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj.provides.build: esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj
 
 
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj: esp-idf/main/CMakeFiles/idf_component_main.dir/flags.make
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj: ../components/esp_hijack_srv/dns_hijack_srv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj"
+	cd /home/ap/esp/softAP_/build/esp-idf/main && /home/ap/.espressif/tools/xtensa-esp32-elf/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj   -c /home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.c
+
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.i"
+	cd /home/ap/esp/softAP_/build/esp-idf/main && /home/ap/.espressif/tools/xtensa-esp32-elf/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.c > CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.i
+
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.s"
+	cd /home/ap/esp/softAP_/build/esp-idf/main && /home/ap/.espressif/tools/xtensa-esp32-elf/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.c -o CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.s
+
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.requires:
+
+.PHONY : esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.requires
+
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.provides: esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.requires
+	$(MAKE) -f esp-idf/main/CMakeFiles/idf_component_main.dir/build.make esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.provides.build
+.PHONY : esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.provides
+
+esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.provides.build: esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj
+
+
 # Object files for target idf_component_main
 idf_component_main_OBJECTS = \
-"CMakeFiles/idf_component_main.dir/softap_example_main.c.obj"
+"CMakeFiles/idf_component_main.dir/softap_example_main.c.obj" \
+"CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj"
 
 # External object files for target idf_component_main
 idf_component_main_EXTERNAL_OBJECTS =
 
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj
+esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/idf_component_main.dir/build.make
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/idf_component_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmain.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ap/esp/softAP_/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmain.a"
 	cd /home/ap/esp/softAP_/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/idf_component_main.dir/cmake_clean_target.cmake
 	cd /home/ap/esp/softAP_/build/esp-idf/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/idf_component_main.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ esp-idf/main/CMakeFiles/idf_component_main.dir/build: esp-idf/main/libmain.a
 .PHONY : esp-idf/main/CMakeFiles/idf_component_main.dir/build
 
 esp-idf/main/CMakeFiles/idf_component_main.dir/requires: esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj.requires
+esp-idf/main/CMakeFiles/idf_component_main.dir/requires: esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj.requires
 
 .PHONY : esp-idf/main/CMakeFiles/idf_component_main.dir/requires
 

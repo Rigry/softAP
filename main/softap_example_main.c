@@ -16,6 +16,7 @@
 #include "esp_log.h"
 #include "esp_http_server.h"
 #include "nvs_flash.h"
+#include "dns_hijack_srv.h"
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
@@ -144,6 +145,14 @@ void stop_webserver(httpd_handle_t server)
     }
 }
 
+static void start_dns_server()
+{
+    ip4_addr_t resolve_ip;
+    inet_pton(AF_INET, "192.168.4.1", &resolve_ip);
+
+    dns_hijack_srv_start(resolve_ip);
+}
+
 static esp_err_t event_handler(void *ctx, system_event_t *event)
 {
     httpd_handle_t *server = (httpd_handle_t *) ctx;
@@ -155,6 +164,7 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
                  event->event_info.sta_connected.aid);
         if (*server == NULL) {
             *server = start_webserver();
+            start_dns_server();
         }
         break;
     case SYSTEM_EVENT_AP_STADISCONNECTED:

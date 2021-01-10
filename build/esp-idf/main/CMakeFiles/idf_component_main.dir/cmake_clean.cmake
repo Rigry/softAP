@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/idf_component_main.dir/softap_example_main.c.obj"
+  "CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj"
   "libmain.pdb"
   "libmain.a"
 )

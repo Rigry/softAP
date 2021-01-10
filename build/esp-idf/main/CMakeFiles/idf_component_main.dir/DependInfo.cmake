@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/ap/esp/softAP_/components/esp_hijack_srv/dns_hijack_srv.c" "/home/ap/esp/softAP_/build/esp-idf/main/CMakeFiles/idf_component_main.dir/__/components/esp_hijack_srv/dns_hijack_srv.c.obj"
   "/home/ap/esp/softAP_/main/softap_example_main.c" "/home/ap/esp/softAP_/build/esp-idf/main/CMakeFiles/idf_component_main.dir/softap_example_main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -22,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../main"
+  "../components/esp_hijack_srv"
   "config"
   "/home/ap/esp/esp-idf/components/app_trace/include"
   "/home/ap/esp/esp-idf/components/app_update/include"
